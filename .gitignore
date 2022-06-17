@@ -1,0 +1,13 @@
+.DS_Store
+.sass-cache/
+npm-debug.log
+node_modules/
+dist/
+vendor/
+*.sql
+unitone-woocommerce-integrator
+unitone-woocommerce-integrator.zip
+.plugins
+/.themes/
+/.export/*
+.wp-env.override.json
