@@ -54,13 +54,13 @@ add_filter(
 
 			if ( is_main_query() && is_page() && is_checkout_pay_page() && $is_request_to_change_payment ) {
 				$page_on_front = get_option( 'page_on_front' );
-				$home_label    = __( 'Home', 'unitone' );
+				$home_label    = __( 'Home', 'unitone-woocommerce-integrator' );
 				if ( $page_on_front ) {
 					$home_label = get_post( $page_on_front )->post_title;
 				}
 
 				$wc_breadcrumbs[0]['title'] = $home_label;
-				$wc_breadcrumbs[1]['title'] = __( 'My account', 'unitone' );
+				$wc_breadcrumbs[1]['title'] = __( 'My account', 'unitone-woocommerce-integrator' );
 				return $wc_breadcrumbs;
 			}
 		}
