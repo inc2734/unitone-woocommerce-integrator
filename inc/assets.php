@@ -12,7 +12,7 @@ add_action(
 	'wp_enqueue_scripts',
 	function() {
 		wp_enqueue_style(
-			'unitone/woocommerce',
+			'unitone/woocommerce-integrator',
 			UNITONE_WOOCOMMERCE_INTEGRATOR_URL . '/dist/css/app.css',
 			array( 'woocommerce-general' ),
 			filemtime( UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/dist/css/app.css' )
