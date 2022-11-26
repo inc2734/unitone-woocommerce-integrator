@@ -13,6 +13,21 @@
 	// Default form-row
 	form .form-row {
 		margin-bottom: var(--unitone--s1);
+
+		label {
+			margin-bottom: 0;
+			line-height: inherit;;
+		}
+	}
+}
+
+// User page width
+.woocommerce-account,
+.woocommerce-cart
+.woocommerce-checkout {
+	.wp-block-post-title,
+	main .woocommerce {
+		max-width: none;
 	}
 }
 
@@ -98,7 +113,7 @@
 
 // Align button and text field sizes.
 .woocommerce .input-text {
-  height: 36px;
+	font-size: inherit;
 	padding-right: var(--unitone--s-2);
 	padding-left: var(--unitone--s-2);
 }
@@ -215,13 +230,14 @@
 }
 
 // My Account page.
-.woocommerce-MyAccount-navigation {
+.woocommerce-account .woocommerce-MyAccount-navigation {
 	ul {
 		list-style: none;
 	}
 
 	li {
 		margin-left: 0;
+		padding: 0;
 
 		& + li {
 			margin-top: var(--unitone--s-1);
