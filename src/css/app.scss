@@ -69,7 +69,11 @@
 
 .woocommerce div.product div.images,
 .woocommerce div.product div.summary {
-	margin-bottom: var(--unitone--s2);
+	margin-bottom: var(--wp--style--block-gap);
+}
+
+.woocommerce div.product div.summary > * {
+	margin-bottom: var(--unitone--global--text-gap);
 }
 
 // Product page tabs.
