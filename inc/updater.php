@@ -15,9 +15,9 @@ add_action(
 			plugin_basename( UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/unitone-woocommerce-integrator.php' ),
 			'inc2734',
 			'unitone-woocommerce-integrator',
-			[
+			array(
 				'homepage' => 'https://unitone.2inc.org',
-			]
+			)
 		);
 	}
 );
