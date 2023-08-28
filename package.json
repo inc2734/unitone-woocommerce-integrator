@@ -37,7 +37,7 @@
 		"composer": "wp-env run --env-cwd=\"wp-content/plugins/unitone-woocommerce-integrator\" cli composer",
 		"test:lint:php": "wp-env start && npm run composer lint",
     "test:lint": "run-s test:lint:*",
-    "test:unit:php": "wp-env start && wp-env run --env-cwd=\"wp-content/plugins/unitone-woocommerce-integrator\" tests-wordpress vendor/bin/phpunit -c .phpunit.xml.dist --verbose",
+    "test:unit:php": "wp-env run composer install-theme && wp-env run composer install-plugin &&wp-env start && wp-env run --env-cwd=\"wp-content/plugins/unitone-woocommerce-integrator\" tests-wordpress vendor/bin/phpunit -c .phpunit.xml.dist --verbose",
     "test:unit": "run-s test:unit:*",
     "test": "run-s test:*",
     "clean:css": "rimraf dist/css && mkdir -p dist/css",
