@@ -259,6 +259,10 @@
 .woocommerce-MyAccount-content {
 	@include text.abstract-text();
 
+	> *:not(:first-child) {
+		margin-top: calc(var(--unitone--margin-top, 1) * var(--unitone--gap));
+	}
+
 	> header {
 		--unitone--margin-bottom: 0;
 
@@ -309,5 +313,19 @@
 .woocommerce-EditAccountForm {
 	> :last-child {
 		margin-top: var(--unitone--s1);
+	}
+}
+
+// Orders table
+.woocommerce-account .woocommerce-orders-table {
+	.woocommerce-orders-table__cell-order-actions {
+		.woocommerce-button {
+			margin: 0;
+			display: inline-block;
+
+			&:not(:first-child) {
+				margin-left: var(--unitone--global--text-gap);
+			}
+		}
 	}
 }
