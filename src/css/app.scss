@@ -1,3 +1,4 @@
+@use '../../node_modules/@inc2734/unitone-css/src/variables/variables' as variables;
 @use '../../node_modules/@inc2734/unitone-css/src/layout-primitives/stack/stack';
 @use '../../node_modules/@inc2734/unitone-css/src/layout-primitives/text/text';
 
@@ -326,6 +327,107 @@
 			&:not(:first-child) {
 				margin-left: var(--unitone--global--text-gap);
 			}
+		}
+	}
+}
+
+/**
+ * Block:checkout
+ */
+
+// Quantity
+.wc-block-components-order-summary {
+	.wc-block-components-order-summary-item__quantity {
+		background-color: black;
+		color: white;
+		border: 0;
+		box-shadow: none;
+
+		span {
+			font-size: 10px;
+			line-height: inherit;
+		}
+	}
+}
+
+// Coupon panel
+.wc-block-components-totals-coupon__form {
+	.wc-block-components-totals-coupon__button {
+		--unitone--padding: var(--unitone--s-2);
+	}
+}
+
+// Step
+.wc-block-components-checkout-step--with-step-number {
+	.wc-block-components-checkout-step__title::before {
+		content: counter(checkout-step) "."/"";
+	}
+}
+
+/**
+ * Block: Order recieved
+ */
+.woocommerce-order-received {
+	.wp-block-woocommerce-legacy-template {
+		display: none;
+	}
+
+	.woocommerce-thankyou-order-received {
+		--unitone--font-size: 4;
+
+		font-size: #{ variables.$font-size };
+		line-height: #{ variables.$line-height };
+	}
+
+	ul.woocommerce-thankyou-order-details {
+		list-style: none;
+		border: 1px solid var(--wp--preset--color--unitone-gray);
+
+		li {
+			margin: 0;
+			padding: var(--unitone--s-1);
+
+			&:not(:first-child) {
+				border-left: 1px solid  var(--wp--preset--color--unitone-gray);
+
+				@media only screen and (max-width: 768px) {
+					border-top: 1px solid  var(--wp--preset--color--unitone-gray);
+					border-left: none;
+				}
+			}
+		}
+	}
+
+	.woocommerce-table--order-details {
+		th,
+		td {
+			border: 1px solid var(--wp--preset--color--unitone-gray);
+			text-align: left;
+		}
+	}
+
+	.woocommerce-customer-details {
+		border: 1px solid var(--wp--preset--color--unitone-gray);
+
+		> * {
+			margin: 0;
+			padding: var(--unitone--s-1);
+		}
+
+		> :not(:first-child) {
+			border-top: 1px solid var(--wp--preset--color--unitone-gray);
+		}
+
+		.woocommerce-column__title {
+			--unitone--font-size: 1;
+
+			font-size: #{ variables.$font-size };
+			line-height: #{ variables.$line-height };
+		}
+
+		address {
+			padding: var(--unitone--s-1);
+			width: auto;
 		}
 	}
 }
