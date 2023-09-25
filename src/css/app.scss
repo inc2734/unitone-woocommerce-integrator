@@ -332,6 +332,18 @@
 }
 
 /**
+ * Block:cart
+ */
+.wp-block-woocommerce-cart-line-items-block {
+	border-collapse: collapse;
+}
+
+.is-large.wc-block-cart .wc-block-cart__totals-title {
+	font-size: #{ variables.$font-size };
+	line-height: #{ variables.$line-height };
+}
+
+/**
  * Block:checkout
  */
 
