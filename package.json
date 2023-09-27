@@ -42,7 +42,7 @@
     "test": "run-s test:*",
     "clean:css": "rimraf dist/css && mkdir -p dist/css",
     "clean:zip": "rimraf unitone-woocommerce-integrator.zip",
-    "css:app": "sass --no-source-map src/css/app.scss:dist/css/app.css && postcss dist/css/app.css -r",
+    "css:app": "sass --no-source-map src/css:dist/css && postcss dist/css -r",
     "css": "npm run clean:css && npm-run-all -p css:*",
     "build": "npm-run-all -p css",
     "zip:pack": "rsync -a --exclude='/vendor' --exclude='/node_modules' --exclude='.*' --exclude='*.ruleset.xml' --exclude='*.config.js' --exclude='*.xml.dist' --exclude='/tests' --exclude='package*.json' . unitone-woocommerce-integrator && wp-env start && npm run composer install -- --no-dev -d unitone-woocommerce-integrator",

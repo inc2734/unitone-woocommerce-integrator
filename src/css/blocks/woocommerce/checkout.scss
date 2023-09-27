@@ -1,0 +1,30 @@
+@use '../../../../node_modules/@inc2734/unitone-css/src/variables/variables' as variables;
+
+// Quantity
+.wc-block-components-order-summary {
+	.wc-block-components-order-summary-item__quantity {
+		background-color: black;
+		color: white;
+		border: 0;
+		box-shadow: none;
+
+		span {
+			font-size: 10px;
+			line-height: inherit;
+		}
+	}
+}
+
+// Coupon panel
+.wc-block-components-totals-coupon__form {
+	.wc-block-components-totals-coupon__button {
+		--unitone--padding: var(--unitone--s-2);
+	}
+}
+
+// Step
+.wc-block-components-checkout-step--with-step-number {
+	.wc-block-components-checkout-step__title::before {
+		content: counter(checkout-step) "."/"";
+	}
+}

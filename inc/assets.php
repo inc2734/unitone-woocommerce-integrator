@@ -26,3 +26,26 @@ add_action(
 		}
 	}
 );
+
+add_action(
+	'after_setup_theme',
+	function() {
+		wp_enqueue_block_style(
+			'woocommerce/cart',
+			array(
+				'handle' => 'unitone-woocommerce-integrator/woocommerce/cart',
+				'src'    => UNITONE_WOOCOMMERCE_INTEGRATOR_URL . '/dist/css/blocks/woocommerce/cart.css',
+				'ver'    => filemtime( UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/dist/css/blocks/woocommerce/cart.css' ),
+			)
+		);
+
+		wp_enqueue_block_style(
+			'woocommerce/checkout',
+			array(
+				'handle' => 'unitone-woocommerce-integrator/woocommerce/checkout',
+				'src'    => UNITONE_WOOCOMMERCE_INTEGRATOR_URL . '/dist/css/blocks/woocommerce/checkout.css',
+				'ver'    => filemtime( UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/dist/css/blocks/woocommerce/checkout.css' ),
+			)
+		);
+	}
+);

@@ -1,0 +1,10 @@
+@use '../../../../node_modules/@inc2734/unitone-css/src/variables/variables' as variables;
+
+.wc-block-cart-items {
+	border-collapse: collapse;
+}
+
+.is-large.wc-block-cart .wc-block-cart__totals-title {
+	font-size: #{ variables.$font-size };
+	line-height: #{ variables.$line-height };
+}
