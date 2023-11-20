@@ -79,10 +79,10 @@
 
 // Product page tabs.
 .woocommerce div.product .woocommerce-tabs ul.tabs {
-	margin: 0 0 -1px;
 	display: flex;
+	border-bottom: 1px solid var(--wp--preset--color--unitone-light-gray);
 	padding: 0;
-	overflow: auto;
+	overflow: visible;
   white-space: nowrap;
 }
 .woocommerce div.product .woocommerce-tabs ul.tabs::before,
@@ -91,29 +91,39 @@
 	display: none;
 }
 .woocommerce div.product .woocommerce-tabs ul.tabs li {
-	margin: 0;
-	border: 1px solid var(--wp--preset--color--unitone-gray);
+	border: none;
 	border-radius: 0;
-	background-color: var(--wp--preset--color--unitone-light-gray);
-	padding: 0 var(--unitone--s1);
+	background-color: transparent;
+	margin: 0;
+	padding: 0;
+	position: relative;
 
 	&.active {
-		border-bottom-color: #fff;
-	}
+		background-color: transparent;
+		color: inherit;
 
-	&:not(:first-child) {
-		border-left: none;
+		&::after {
+			content: '';
+			display: block;
+			position: absolute;
+			inset: auto 0 -1px 0;
+			border: none;
+			border-bottom: 1px solid var(--wp--preset--color--unitone-accent);
+			border-radius: 0;
+			height: auto;
+			width: auto;
+		}
 	}
 
 	a {
+		display: block;
 		font-weight: normal;
+		padding: var(--unitone--s-1) var(--unitone--s1);
 	}
 }
 .woocommerce div.product .woocommerce-tabs .panel {
-	--unitone--max-width: 100%;
 	margin: 0;
-	border: 1px solid var(--wp--preset--color--unitone-gray);
-	padding: var(--unitone--s2);
+	max-width: var(--unitone--max-width);
 }
 
 // Align button and text field sizes.
@@ -145,11 +155,7 @@
 	}
 
 	.woocommerce-Reviews-title {
-		font-size: var(--wp--preset--font-size--unitone-xl);
-
-		> span {
-			font-size: inherit;
-		}
+		--unitone--font-size: 3;
 	}
 
 	.comment-respond {
@@ -159,12 +165,21 @@
 	}
 
 	.comment-reply-title {
-		font-size: var(--wp--preset--font-size--unitone-l);
 		font-weight: bold;
 	}
 
 	#review_form #respond p {
 		margin: 0;
+	}
+
+	.comment-form {
+		@include stack.abstract-stack();
+
+		.comment-form-rating,
+		.comment-form-comment {
+			@include stack.abstract-stack();
+			--unitone--gap: var(--unitone--s-2);
+		}
 	}
 
 	.comment-form .comment-form-cookies-consent #wp-comment-cookies-consent {
@@ -195,6 +210,34 @@
 		&.selected:not(:hover) a.active ~ a {
 			color: #d3ced2;
 		}
+	}
+}
+
+// A review
+.woocommerce #reviews #comments ol.commentlist .review {
+	.comment-text {
+		background-color: var(--wp--preset--color--white);
+		border-color: var(--wp--preset--color--unitone-light-gray);
+		color: var(--wp--preset--color--unitone-text-black);
+		padding: var(--unitone--p1);
+	}
+
+	.meta {
+		margin: 0 0 var(--unitone--s1);
+		color: inherit;
+	}
+
+	.description {
+		@include stack.abstract-stack();
+	}
+}
+
+// Product page related
+.woocommerce div.product .related.products {
+	margin-top: var(--unitone--s2);
+
+	h2 {
+		--unitone--font-size: 3;
 	}
 }
 
@@ -348,17 +391,17 @@
 
 	ul.woocommerce-thankyou-order-details {
 		list-style: none;
-		border: 1px solid var(--wp--preset--color--unitone-gray);
+		border: 1px solid var(--wp--preset--color--unitone-light-gray);
 
 		li {
 			margin: 0;
 			padding: var(--unitone--s-1);
 
 			&:not(:first-child) {
-				border-left: 1px solid  var(--wp--preset--color--unitone-gray);
+				border-left: 1px solid  var(--wp--preset--color--unitone-light-gray);
 
 				@media only screen and (max-width: 768px) {
-					border-top: 1px solid  var(--wp--preset--color--unitone-gray);
+					border-top: 1px solid  var(--wp--preset--color--unitone-light-gray);
 					border-left: none;
 				}
 			}
@@ -368,13 +411,13 @@
 	.woocommerce-table--order-details {
 		th,
 		td {
-			border: 1px solid var(--wp--preset--color--unitone-gray);
+			border: 1px solid var(--wp--preset--color--unitone-light-gray);
 			text-align: left;
 		}
 	}
 
 	.woocommerce-customer-details {
-		border: 1px solid var(--wp--preset--color--unitone-gray);
+		border: 1px solid var(--wp--preset--color--unitone-light-gray);
 
 		> * {
 			margin: 0;
@@ -382,7 +425,7 @@
 		}
 
 		> :not(:first-child) {
-			border-top: 1px solid var(--wp--preset--color--unitone-gray);
+			border-top: 1px solid var(--wp--preset--color--unitone-light-gray);
 		}
 
 		.woocommerce-column__title {
@@ -396,5 +439,15 @@
 			padding: var(--unitone--s-1);
 			width: auto;
 		}
+	}
+}
+
+.wc-block-components-notice-banner {
+	align-items: center;
+	color: var(--wp--preset--color--unitone-text-black);
+
+	> .wc-block-components-notice-banner__content .wc-forward.wp-element-button {
+		color: inherit !important;
+		opacity: 1;
 	}
 }
