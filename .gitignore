@@ -11,3 +11,4 @@ unitone-woocommerce-integrator.zip
 /.themes/
 /.export/*
 .wp-env.override.json
+.phpunit.result.cache
