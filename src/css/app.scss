@@ -51,7 +51,7 @@
 .woocommerce-checkout {
 	.wp-block-post-title,
 	main .woocommerce {
-		max-width: none;
+		max-width: var(--unitone--max-width);
 	}
 }
 
