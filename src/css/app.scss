@@ -325,10 +325,9 @@
 }
 .woocommerce-MyAccount-content {
 	@include text.abstract-text();
+	@include text.abstract-text--gap();
 
-	> *:not(:first-child) {
-		margin-top: calc(var(--unitone--margin-top, 1) * var(--unitone--gap));
-	}
+	--unitone--max-width: 100%;
 
 	> header {
 		--unitone--margin-bottom: 0;
