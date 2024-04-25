@@ -15,7 +15,7 @@ remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20 )
  */
 add_filter(
 	'unitone_breadcrumbs',
-	function( $breadcrumbs ) {
+	function ( $breadcrumbs ) {
 		if ( ! is_woocommerce() && ! is_cart() && ! is_checkout() ) {
 			return $breadcrumbs;
 		}

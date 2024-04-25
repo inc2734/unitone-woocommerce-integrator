@@ -10,7 +10,7 @@
  */
 add_action(
 	'wp_enqueue_scripts',
-	function() {
+	function () {
 		wp_enqueue_style(
 			'unitone/woocommerce-integrator',
 			UNITONE_WOOCOMMERCE_INTEGRATOR_URL . '/dist/css/app.css',
@@ -29,7 +29,7 @@ add_action(
 
 add_action(
 	'after_setup_theme',
-	function() {
+	function () {
 		wp_enqueue_block_style(
 			'woocommerce/cart',
 			array(

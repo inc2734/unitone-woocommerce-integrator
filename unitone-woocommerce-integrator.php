@@ -43,7 +43,7 @@ class Bootstrap {
 		if ( 'unitone' !== $theme->template ) {
 			add_action(
 				'admin_notices',
-				function() {
+				function () {
 					?>
 					<div class="notice notice-warning is-dismissible">
 						<p>
@@ -59,7 +59,7 @@ class Bootstrap {
 		if ( ! class_exists( 'woocommerce' ) ) {
 			add_action(
 				'admin_notices',
-				function() {
+				function () {
 					?>
 					<div class="notice notice-warning is-dismissible">
 						<p>
@@ -79,5 +79,5 @@ class Bootstrap {
 	}
 }
 
-require_once( __DIR__ . '/vendor/autoload.php' );
+require_once __DIR__ . '/vendor/autoload.php';
 new \UnitoneWoocommerceIntegrator\Bootstrap();

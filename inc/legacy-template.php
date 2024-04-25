@@ -10,12 +10,8 @@
  */
 add_filter(
 	'render_block_woocommerce/legacy-template',
-	function( $block_content, $block ) {
+	function ( $block_content ) {
 		$block_content = str_replace( 'woocommerce-Tabs-panel', 'woocommerce-Tabs-panel is-layout-constrained', $block_content );
 		return $block_content;
-	},
-	10,
-	2
+	}
 );
-
-
