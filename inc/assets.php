@@ -110,5 +110,14 @@ add_action(
 				'ver'    => filemtime( UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/dist/css/blocks/woocommerce/order-confirmation-downloads.css' ),
 			)
 		);
+
+		wp_enqueue_block_style(
+			'woocommerce/order-confirmation-status',
+			array(
+				'handle' => 'unitone-woocommerce-integrator/woocommerce/order-confirmation-status',
+				'src'    => UNITONE_WOOCOMMERCE_INTEGRATOR_URL . '/dist/css/blocks/woocommerce/order-confirmation-status.css',
+				'path'   => UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/dist/css/blocks/woocommerce/order-confirmation-status.css',
+			)
+		);
 	}
 );
