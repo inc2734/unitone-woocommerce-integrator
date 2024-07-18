@@ -146,7 +146,7 @@
 }
 .woocommerce div.product .woocommerce-tabs .panel {
 	margin: 0;
-	max-width: var(--unitone--max-width);
+	max-width: var(var(--wp--style--global--wide-size));
 }
 
 // Align button and text field sizes.
