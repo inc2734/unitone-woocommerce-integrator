@@ -76,6 +76,7 @@ class Bootstrap {
 		require UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/inc/breadcrumbs.php';
 		require UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/inc/page-title.php';
 		require UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/inc/legacy-template.php';
+		require UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/inc/templates.php';
 	}
 }
 
