@@ -70,7 +70,10 @@
 .product .entry-summary,
 .woocommerce-product-details__short-description {
 	@include text.abstract-text();
-	--unitone--max-width: 100%;
+
+	& {
+		--unitone--max-width: 100%;
+	}
 }
 :where(.product .entry-summary > *, .woocommerce-product-details__short-description > *) {
 	max-width: var(--unitone--max-width);
@@ -201,7 +204,10 @@
 		.comment-form-rating,
 		.comment-form-comment {
 			@include stack.abstract-stack();
-			--unitone--gap: var(--unitone--s-2);
+
+			& {
+				--unitone--gap: var(--unitone--s-2);
+			}
 		}
 	}
 
@@ -327,7 +333,9 @@
 	@include text.abstract-text();
 	@include text.abstract-text--gap();
 
-	--unitone--max-width: 100%;
+	& {
+		--unitone--max-width: 100%;
+	}
 
 	> header {
 		--unitone--margin-bottom: 0;
