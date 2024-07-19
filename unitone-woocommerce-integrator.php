@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin name: unitone WooCommerce integrator
- * Version: 0.1.4
+ * Version: 0.1.5
  * Tested up to: 6.6
  * Requires at least: 6.6
  * Requires PHP: 7.4
