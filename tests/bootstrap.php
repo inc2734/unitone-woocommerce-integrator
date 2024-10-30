@@ -55,7 +55,6 @@ function _manually_load_plugin() {
 		return $current_theme;
 	});
 
-	require dirname( dirname( __FILE__ ) ) . '/.plugins/woocommerce/woocommerce.php';
 	require dirname( dirname( __FILE__ ) ) . '/unitone-woocommerce-integrator.php';
 }
 tests_add_filter( 'muplugins_loaded', '_manually_load_plugin' );

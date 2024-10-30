@@ -1,10 +1,12 @@
 <?php
 /**
- * Class SampleTest
+ * Mock
  */
+class woocommerce {
+}
 
 /**
- * Sample test case.
+ * SampleTest
  */
 class SampleTest extends WP_UnitTestCase {
 
