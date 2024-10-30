@@ -23,7 +23,7 @@
 		"format": "phpcbf --standard=.phpcs.xml.dist --report-summary --report-source",
 		"lint": "phpcs --standard=.phpcs.xml.dist",
 		"install-theme": "rm -rf ./.themes && mkdir ./.themes && wget -P ./.themes https://github.com/inc2734/unitone/archive/main.zip && unzip -o -qq ./.themes/main.zip -d ./.themes && mv ./.themes/unitone-main ./.themes/unitone && cd .themes/unitone && composer install --no-dev",
-		"install-plugin": "rm -rf ./.plugins && mkdir ./.plugins && wget -P ./.plugins https://downloads.wordpress.org/plugin/woocommerce.zip && unzip -o -qq ./.plugins/woocommerce -d ./.plugins"
+		"install-plugin": "rm -rf ./.plugins && mkdir ./.plugins && wget -P ./.plugins -U Mozilla/5.0 https://downloads.wordpress.org/plugin/woocommerce.zip && unzip -o -qq ./.plugins/woocommerce -d ./.plugins"
 	},
 	"autoload": {
 		"psr-4": {
