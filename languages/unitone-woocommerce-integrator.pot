@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-11-04T08:02:50+00:00\n"
+"POT-Creation-Date: 2024-11-04T14:40:39+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.9.0\n"
 "X-Domain: unitone-woocommerce-integrator\n"
@@ -215,76 +215,64 @@ msgid "Order Confirmation: One Column"
 msgstr ""
 
 #: inc/templates.php:324
-#: inc/templates.php:478
+#: inc/templates.php:454
 msgid "Single Products: Left Header / Page Header (Image)"
 msgstr ""
 
 #: inc/templates.php:332
-#: inc/templates.php:472
+#: inc/templates.php:448
 msgid "Single Products: Left Header"
 msgstr ""
 
 #: inc/templates.php:340
-#: inc/templates.php:454
+#: inc/templates.php:430
 msgid "Single Products: One Column / Page Header (Image)"
 msgstr ""
 
 #: inc/templates.php:348
-#: inc/templates.php:448
+#: inc/templates.php:424
 msgid "Single Products: One Column"
 msgstr ""
 
 #: inc/templates.php:356
-#: inc/templates.php:466
+#: inc/templates.php:442
 msgid "Single Products: Right Sidebar / Page Header (Image)"
 msgstr ""
 
 #: inc/templates.php:364
-#: inc/templates.php:460
+#: inc/templates.php:436
 msgid "Single Products: Right Sidebar"
 msgstr ""
 
-#: inc/templates.php:372
-msgid "Single Posts: Right Sidebar / Page Header (Featured Image)"
-msgstr ""
-
-#: inc/templates.php:380
-msgid "Single Posts: Right Sidebar / Page Header (Image)"
-msgstr ""
-
-#: inc/templates.php:388
-msgid "Single Posts: Right Sidebar"
-msgstr ""
-
-#: inc/templates.php:423
+#: inc/templates.php:399
 msgid "Product Catalog"
 msgstr ""
 
-#: inc/templates.php:428
+#: inc/templates.php:404
 msgid "Order Confirmation"
 msgstr ""
 
-#: inc/templates.php:433
+#: inc/templates.php:409
 msgid "Page: Cart"
 msgstr ""
 
-#: inc/templates.php:438
+#: inc/templates.php:414
 msgid "Page: Checkout"
 msgstr ""
 
-#: inc/templates.php:443
+#: inc/templates.php:419
 msgid "Single Product"
 msgstr ""
 
-#: unitone-woocommerce-integrator.php:51
+#: unitone-woocommerce-integrator.php:49
 msgid "[unitone WooCommerce integrator] Needs unitone theme."
 msgstr ""
 
 #. translators: %1$s: version.
-#: unitone-woocommerce-integrator.php:81
+#: unitone-woocommerce-integrator.php:79
 msgid "[unitone WooCommerce Integrator] Needs unitone theme %1$s or more."
 msgstr ""
 
-#: unitone-woocommerce-integrator.php:104
+#: unitone-woocommerce-integrator.php:102
 msgid "[unitone WooCommerce integrator] Needs the WooCommerce."
 msgstr ""
