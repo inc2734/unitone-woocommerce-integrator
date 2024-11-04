@@ -5,6 +5,7 @@
  * Tested up to: 6.6
  * Requires at least: 6.6
  * Requires PHP: 7.4
+ * Requires unitone: 15.0.0-beta1
  * Description: This plugin makes unitone beautifully display WooCommerce and adds some features.
  * Author: Takashi Kitajima
  * Author URI: https://2inc.org
@@ -47,7 +48,44 @@ class Bootstrap {
 					?>
 					<div class="notice notice-warning is-dismissible">
 						<p>
-							<?php esc_html_e( '[unitone WooCommerce integrator] Needs the unitone.', 'unitone-woocommerce-integrator' ); ?>
+							<?php esc_html_e( '[unitone WooCommerce integrator] Needs unitone theme.', 'unitone-woocommerce-integrator' ); ?>
+						</p>
+					</div>
+					<?php
+				}
+			);
+			return;
+		}
+
+		$data = get_file_data(
+			__FILE__,
+			array(
+				'RequiresUnitone' => 'Requires unitone',
+			)
+		);
+
+		if (
+			isset( $data['RequiresUnitone'] ) &&
+			version_compare( $theme->get( 'Version' ), $data['RequiresUnitone'], '<' )
+		) {
+			add_action(
+				'admin_notices',
+				function () use ( $data ) {
+					?>
+					<div class="notice notice-warning is-dismissible">
+						<p>
+							<?php
+							echo esc_html(
+								sprintf(
+									// translators: %1$s: version.
+									__(
+										'[unitone WooCommerce Integrator] Needs unitone theme %1$s or more.',
+										'unitone-woocommerce-integrator'
+									),
+									'v' . $data['RequiresUnitone']
+								)
+							);
+							?>
 						</p>
 					</div>
 					<?php

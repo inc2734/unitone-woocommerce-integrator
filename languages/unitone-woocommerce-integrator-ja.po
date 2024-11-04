@@ -5,8 +5,8 @@ msgstr ""
 "Project-Id-Version: unitone WooCommerce integrator 0.0.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/unitone-"
 "woocommerce-integrator\n"
-"POT-Creation-Date: 2022-06-17T01:31:33+00:00\n"
-"PO-Revision-Date: 2022-06-17 10:32+0900\n"
+"POT-Creation-Date: 2024-11-04T08:02:50+00:00\n"
+"PO-Revision-Date: 2024-11-04 17:04+0900\n"
 "Last-Translator: inc2734 <inc@2inc.org>\n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.5\n"
 "X-Domain: unitone-woocommerce-integrator\n"
 
 #. Plugin Name of the plugin
@@ -45,10 +45,253 @@ msgstr "ホーム"
 msgid "My account"
 msgstr "マイアカウント"
 
-#: unitone-woocommerce-integrator.php:52
-msgid "[unitone WooCommerce integrator] Needs the unitone."
-msgstr "[unitone WooCommerce integrator] unitoneが必要です。"
+#: inc/templates.php:19
+msgid "Main Area (One Column) for Product Catalog"
+msgstr "商品カタログのメインエリア（1カラム）"
 
-#: unitone-woocommerce-integrator.php:68
+#: inc/templates.php:25
+msgid "Main Area (One Column / Page Header (Image)) for Product Catalog"
+msgstr "商品カタログのメインエリア（1カラム / ページヘッダー（画像））"
+
+#: inc/templates.php:31
+msgid "Main Area (Right Sidebar / Page Header (Image)) for Product Catalog"
+msgstr ""
+"商品カタログのメインエリア（右サイドバー / ページヘッダー（アイキャッチ画"
+"像））"
+
+#: inc/templates.php:37
+msgid "Main Area (Right Sidebar) for Product Catalog"
+msgstr "商品カタログのメインエリア（右サイドバー）"
+
+#: inc/templates.php:43
+msgid "Page Header (Image) for Product Catalog"
+msgstr "商品カタログのページヘッダー（画像）"
+
+#: inc/templates.php:49
+msgid "Page Header for Product Catalog"
+msgstr "商品カタログのページヘッダー"
+
+#: inc/templates.php:56
+msgid "Contents for Cart"
+msgstr "お買い物カゴのコンテンツ"
+
+#: inc/templates.php:62
+msgid "Main Area (One Column) for Cart"
+msgstr "購入手続きのメインエリア（1カラム）"
+
+#: inc/templates.php:68
+msgid "Main Area (One Column / Page Header (Image)) for Cart"
+msgstr "お買い物カゴのメインエリア（1カラム / ページヘッダー（画像））"
+
+#: inc/templates.php:74
+msgid "Page Header (Image) for Cart"
+msgstr "お買い物カゴのページヘッダー（画像）"
+
+#: inc/templates.php:80
+msgid "Page Header for Cart"
+msgstr "お買い物カゴのページヘッダー"
+
+#: inc/templates.php:87
+msgid "Contents for Checkout"
+msgstr "購入手続きのコンテンツ"
+
+#: inc/templates.php:93
+msgid "Main Area (One Column) for Checkout"
+msgstr "購入手続きのメインエリア（1カラム）"
+
+#: inc/templates.php:99
+msgid "Main Area (One Column / Page Header (Image)) for Checkout"
+msgstr "購入手続きのメインエリア（1カラム / ページヘッダー（画像））"
+
+#: inc/templates.php:105
+msgid "Page Header (Image) for Checkout"
+msgstr "購入手続きのページヘッダー（画像）"
+
+#: inc/templates.php:111
+msgid "Page Header for Checkout"
+msgstr "購入手続きのページヘッダー"
+
+#: inc/templates.php:118
+msgid "Contents for Order Confirmation"
+msgstr "注文確認のコンテンツ"
+
+#: inc/templates.php:124
+msgid "Main Area (One Column) for Order Confirmation"
+msgstr "注文確認のメインエリア（1カラム）"
+
+#: inc/templates.php:130
+msgid "Main Area (One Column / Page Header (Image)) for Order Confirmation"
+msgstr "注文確認のメインエリア（1カラム / ページヘッダー（画像））"
+
+#: inc/templates.php:136
+msgid "Page Header (Image) for Order Confirmation"
+msgstr "注文確認のページヘッダー（画像）"
+
+#: inc/templates.php:142
+msgid "Page Header for Order Confirmation"
+msgstr "注文確認のページヘッダー"
+
+#: inc/templates.php:149
+msgid "Main Area (One Column) for Single Products"
+msgstr "単一の商品のメインエリア（1カラム）"
+
+#: inc/templates.php:155
+msgid "Main Area (One Column / Page Header (Image)) for Single Products"
+msgstr ""
+"単一の商品のメインエリア（1カラム / ページヘッダー（アイキャッチ画像））"
+
+#: inc/templates.php:161
+msgid "Main Area (Right Sidebar / Page Header (Image)) for Single Products"
+msgstr ""
+"単一の商品のメインエリア（右サイドバー / ページヘッダー（アイキャッチ画"
+"像））"
+
+#: inc/templates.php:167
+msgid "Main Area (Right Sidebar) for Single Products"
+msgstr "単一の商品のメインエリア（右サイドバー）"
+
+#: inc/templates.php:173
+msgid "Page Header (Image) for Single Products"
+msgstr "単一の商品のページヘッダー（画像）"
+
+#: inc/templates.php:180
+msgid "Product Catalog: Left Header / Page Header (Image)"
+msgstr "商品カタログ：左ヘッダー / ページヘッダー（画像）"
+
+#: inc/templates.php:188
+msgid "Product Catalog: Left Header"
+msgstr "商品カタログ：左ヘッダー"
+
+#: inc/templates.php:196
+msgid "Product Catalog: One Column / Page Header (Image)"
+msgstr "商品カタログ：1カラム / ページヘッダー（画像）"
+
+#: inc/templates.php:204
+msgid "Product Catalog: One Column"
+msgstr "商品カタログ：1カラム"
+
+#: inc/templates.php:212
+msgid "Product Catalog: Right Sidebar / Page Header (Image)"
+msgstr "商品カタログ：右サイドバー / ページヘッダー（画像）"
+
+#: inc/templates.php:220
+msgid "Product Catalog: Right Sidebar"
+msgstr "商品カタログ：右サイドバー"
+
+#: inc/templates.php:228
+msgid "Cart: Left Header / Page Header (Image)"
+msgstr "お買い物カゴ：左ヘッダー / ページヘッダー（画像）"
+
+#: inc/templates.php:236
+msgid "Cart: Left Header"
+msgstr "お買い物カゴ：左ヘッダー"
+
+#: inc/templates.php:244
+msgid "Cart: One Column / Page Header (Image)"
+msgstr "お買い物カゴ：1カラム / ページヘッダー（画像）"
+
+#: inc/templates.php:252
+msgid "Cart: One Column"
+msgstr "お買い物カゴ：1カラム"
+
+#: inc/templates.php:260
+msgid "Checkout: Left Header / Page Header (Image)"
+msgstr "購入手続き：左ヘッダー / ページヘッダー（画像）"
+
+#: inc/templates.php:268
+msgid "Checkout: Left Header"
+msgstr "購入手続き：左ヘッダー"
+
+#: inc/templates.php:276
+msgid "Checkout: One Column / Page Header (Image)"
+msgstr "購入手続き：1カラム / ページヘッダー（画像）"
+
+#: inc/templates.php:284
+msgid "Checkout: One Column"
+msgstr "購入手続き：1カラム"
+
+#: inc/templates.php:292
+msgid "Order Confirmation: Left Header / Page Header (Image)"
+msgstr "注文確認：左ヘッダー / ページヘッダー（画像）"
+
+#: inc/templates.php:300
+msgid "Order Confirmation: Left Header"
+msgstr "注文確認：左ヘッダー"
+
+#: inc/templates.php:308
+msgid "Order Confirmation: One Column / Page Header (Image)"
+msgstr "注文確認：1カラム / ページヘッダー（画像）"
+
+#: inc/templates.php:316
+msgid "Order Confirmation: One Column"
+msgstr "注文確認：1カラム"
+
+#: inc/templates.php:324 inc/templates.php:478
+msgid "Single Products: Left Header / Page Header (Image)"
+msgstr "単一の商品：左ヘッダー / ページヘッダー（画像）"
+
+#: inc/templates.php:332 inc/templates.php:472
+msgid "Single Products: Left Header"
+msgstr "単一の商品：左ヘッダー"
+
+#: inc/templates.php:340 inc/templates.php:454
+msgid "Single Products: One Column / Page Header (Image)"
+msgstr "単一の商品：1カラム / ページヘッダー（画像）"
+
+#: inc/templates.php:348 inc/templates.php:448
+msgid "Single Products: One Column"
+msgstr "単一の商品：1カラム"
+
+#: inc/templates.php:356 inc/templates.php:466
+msgid "Single Products: Right Sidebar / Page Header (Image)"
+msgstr "単一の商品：右サイドバー / ページヘッダー（画像）"
+
+#: inc/templates.php:364 inc/templates.php:460
+msgid "Single Products: Right Sidebar"
+msgstr "単一の商品：右サイドバー"
+
+#: inc/templates.php:372
+msgid "Single Posts: Right Sidebar / Page Header (Featured Image)"
+msgstr "個別投稿：右サイドバー / ページヘッダー（アイキャッチ画像）"
+
+#: inc/templates.php:380
+msgid "Single Posts: Right Sidebar / Page Header (Image)"
+msgstr "個別投稿：右サイドバー / ページヘッダー（画像）"
+
+#: inc/templates.php:388
+msgid "Single Posts: Right Sidebar"
+msgstr "個別投稿：右サイドバー"
+
+#: inc/templates.php:423
+msgid "Product Catalog"
+msgstr "商品カタログのページヘッダー（画像）"
+
+#: inc/templates.php:428
+msgid "Order Confirmation"
+msgstr "注文確認"
+
+#: inc/templates.php:433
+msgid "Page: Cart"
+msgstr "ページ：お買い物カゴ"
+
+#: inc/templates.php:438
+msgid "Page: Checkout"
+msgstr "購入手続き"
+
+#: inc/templates.php:443
+msgid "Single Product"
+msgstr "個別商品"
+
+#: unitone-woocommerce-integrator.php:51
+msgid "[unitone WooCommerce integrator] Needs unitone theme."
+msgstr "[unitone WooCommerce integrator] unitone テーマが必要です。"
+
+#. translators: %1$s: version.
+#: unitone-woocommerce-integrator.php:81
+msgid "[unitone WooCommerce Integrator] Needs unitone theme %1$s or more."
+msgstr ""
+"[unitone WooCommerce Integrator] unitone テーマ %1$s以上が必要です。"
+
+#: unitone-woocommerce-integrator.php:104
 msgid "[unitone WooCommerce integrator] Needs the WooCommerce."
 msgstr "[unitone WooCommerce integrator] WooCommerceが必要です。"
