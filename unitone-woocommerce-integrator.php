@@ -2,8 +2,8 @@
 /**
  * Plugin name: unitone WooCommerce integrator
  * Version: 0.1.7
- * Tested up to: 6.6
- * Requires at least: 6.6
+ * Tested up to: 6.7-rc1
+ * Requires at least: 6.7-rc1
  * Requires PHP: 7.4
  * Requires unitone: 15.0.0-beta1
  * Description: This plugin makes unitone beautifully display WooCommerce and adds some features.
@@ -36,8 +36,6 @@ class Bootstrap {
 	 * Bootstrap.
 	 */
 	public function _bootstrap() {
-		load_plugin_textdomain( 'unitone-woocommerce-integrator', false, basename( __DIR__ ) . '/languages' );
-
 		require UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/inc/updater.php';
 
 		$theme = wp_get_theme( get_template() );
@@ -112,6 +110,7 @@ class Bootstrap {
 
 		require UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/inc/assets.php';
 		require UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/inc/breadcrumbs.php';
+		require UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/inc/i18n.php';
 		require UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/inc/page-title.php';
 		require UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/inc/legacy-template.php';
 		require UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/inc/templates.php';

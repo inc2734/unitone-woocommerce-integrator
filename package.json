@@ -10,9 +10,9 @@
 		"postcss": "^8.4.47"
 	},
 	"devDependencies": {
-		"@inc2734/unitone-css": "^0.60.5",
-		"@wordpress/env": "^10.8.0",
-		"@wordpress/scripts": "^30.0.2",
+		"@inc2734/unitone-css": "^0.61.2",
+		"@wordpress/env": "^10.11.0",
+		"@wordpress/scripts": "^30.4.0",
 		"autoprefixer": "^10.4.20",
 		"cpy-cli": "^5.0.0",
 		"cssnano": "^7.0.6",
@@ -21,7 +21,7 @@
 		"postcss-cli": "^11.0.0",
 		"postcss-import": "^16.1.0",
 		"rimraf": "^6.0.1",
-		"sass": "^1.79.3"
+		"sass": "^1.80.6"
 	},
 	"scripts": {
 		"export:wp-content:themes": "npm run cli cp -- -r ../../themes .export/wp-content",
