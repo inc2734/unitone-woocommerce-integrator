@@ -36,6 +36,7 @@ class Bootstrap {
 	 * Bootstrap.
 	 */
 	public function _bootstrap() {
+		require UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/inc/i18n.php';
 		require UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/inc/updater.php';
 
 		$theme = wp_get_theme( get_template() );
@@ -110,7 +111,6 @@ class Bootstrap {
 
 		require UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/inc/assets.php';
 		require UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/inc/breadcrumbs.php';
-		require UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/inc/i18n.php';
 		require UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/inc/page-title.php';
 		require UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/inc/legacy-template.php';
 		require UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/inc/templates.php';
