@@ -13,7 +13,7 @@
 		"wp-coding-standards/wpcs": "^3.0",
 		"phpcompatibility/phpcompatibility-wp": "*",
 		"dealerdirect/phpcodesniffer-composer-installer": "^1.0",
-		"yoast/phpunit-polyfills": "^1.1"
+		"yoast/phpunit-polyfills": "^2.0"
 	},
 	"require": {
 		"php": ">=7.4",
@@ -22,7 +22,8 @@
 	"scripts" :{
 		"format": "phpcbf --standard=.phpcs.xml.dist --report-summary --report-source",
 		"lint": "phpcs --standard=.phpcs.xml.dist",
-		"install-theme": "rm -rf ./.themes && mkdir ./.themes && wget -P ./.themes https://github.com/inc2734/unitone/archive/main.zip && unzip -o -qq ./.themes/main.zip -d ./.themes && mv ./.themes/unitone-main ./.themes/unitone && cd .themes/unitone && composer install --no-dev"
+		"install-theme": "rm -rf ./.themes && mkdir ./.themes && wget -P ./.themes https://github.com/inc2734/unitone/archive/main.zip && unzip -o -qq ./.themes/main.zip -d ./.themes && mv ./.themes/unitone-main ./.themes/unitone && cd .themes/unitone && composer install --no-dev",
+		"install-plugin": "rm -rf ./.plugins/woocommerce && unzip -o -qq ./.plugins/woocommerce -d ./.plugins"
 	},
 	"autoload": {
 		"psr-4": {
