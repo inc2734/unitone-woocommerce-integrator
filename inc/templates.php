@@ -503,9 +503,11 @@ add_action(
 				);
 
 				return $theme_json->update_with( $new_data );
-			}
+			},
+			9
 		);
-	}
+	},
+	9
 );
 
 /**
