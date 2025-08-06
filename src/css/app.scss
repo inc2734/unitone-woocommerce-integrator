@@ -440,8 +440,7 @@
 	.woocommerce-thankyou-order-received {
 		--unitone--font-size: 4;
 
-		font-size: #{ variables.$font-size };
-		line-height: #{ variables.$line-height };
+		@include variables.typography();
 	}
 
 	ul.woocommerce-thankyou-order-details {
@@ -486,8 +485,7 @@
 		.woocommerce-column__title {
 			--unitone--font-size: 1;
 
-			font-size: #{ variables.$font-size };
-			line-height: #{ variables.$line-height };
+			@include variables.typography();
 		}
 
 		address {

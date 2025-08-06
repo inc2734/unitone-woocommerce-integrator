@@ -5,6 +5,5 @@
 }
 
 .is-large.wc-block-cart .wc-block-cart__totals-title {
-	font-size: #{ variables.$font-size };
-	line-height: #{ variables.$line-height };
+	@include variables.typography();
 }
