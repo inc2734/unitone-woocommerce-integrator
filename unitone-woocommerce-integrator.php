@@ -2,8 +2,8 @@
 /**
  * Plugin name: unitone WooCommerce integrator
  * Version: 0.2.4
- * Tested up to: 6.7
- * Requires at least: 6.7
+ * Tested up to: 6.8
+ * Requires at least: 6.8
  * Requires PHP: 7.4
  * Requires unitone: 15.0.0-beta1
  * Description: This plugin makes unitone beautifully display WooCommerce and adds some features.

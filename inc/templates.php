@@ -382,10 +382,29 @@ add_action(
 );
 
 /**
- * Add templates.
+ * The file_get_contents() for block templates.
  *
- * The slug should be `unitone-woocommerce-integrator//*` though,
- * However, due to historical reasons, it should be `unitone//*`.
+ * @param string $file_path The block template file path.
+ * @return string
+ */
+function unitone_template_get_content( $file_path ) {
+	static $template_cache = array();
+
+	if ( isset( $template_cache[ $file_path ] ) ) {
+		return $template_cache[ $file_path ];
+	}
+
+	if ( is_readable( $file_path ) ) {
+		$template_cache[ $file_path ] = file_get_contents( $file_path );
+	} else {
+		$template_cache[ $file_path ] = '';
+	}
+
+	return $template_cache[ $file_path ];
+}
+
+/**
+ * Add templates and override WooCommerce templates.
  *
  * @see https://github.com/woocommerce/woocommerce/tree/trunk/plugins/woocommerce/templates/templates/blockified
  * @see https://github.com/woocommerce/woocommerce/tree/trunk/plugins/woocommerce/src/Blocks/Templates
@@ -393,70 +412,71 @@ add_action(
 add_action(
 	'init',
 	function () {
+		$stylesheet = get_stylesheet();
+
+		$woocommerce_block_templates = array(
+			array(
+				'id'      => $stylesheet . '//archive-product',
+				'content' => unitone_template_get_content( UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/templates/archive-product.html' ),
+			),
+			array(
+				'id'      => $stylesheet . '//order-confirmation',
+				'content' => unitone_template_get_content( UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/templates/order-confirmation.html' ),
+			),
+			array(
+				'id'      => $stylesheet . '//page-cart',
+				'content' => unitone_template_get_content( UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/templates/page-cart.html' ),
+			),
+			array(
+				'id'      => $stylesheet . '//page-checkout',
+				'content' => unitone_template_get_content( UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/templates/page-checkout.html' ),
+			),
+			array(
+				'id'      => $stylesheet . '//single-product',
+				'content' => unitone_template_get_content( UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/templates/single-product.html' ),
+			),
+		);
+
 		$block_templates = array(
 			array(
-				'slug'    => 'unitone//archive-product',
-				'title'   => __( 'Product Catalog', 'unitone-woocommerce-integrator' ),
-				'content' => file_get_contents( UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/templates/archive-product.html' ),
-			),
-			array(
-				'slug'    => 'unitone//order-confirmation',
-				'title'   => __( 'Order Confirmation', 'unitone-woocommerce-integrator' ),
-				'content' => file_get_contents( UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/templates/order-confirmation.html' ),
-			),
-			array(
-				'slug'    => 'unitone//page-cart',
-				'title'   => __( 'Page: Cart', 'unitone-woocommerce-integrator' ),
-				'content' => file_get_contents( UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/templates/page-cart.html' ),
-			),
-			array(
-				'slug'    => 'unitone//page-checkout',
-				'title'   => __( 'Page: Checkout', 'unitone-woocommerce-integrator' ),
-				'content' => file_get_contents( UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/templates/page-checkout.html' ),
-			),
-			array(
-				'slug'    => 'unitone//single-product',
-				'title'   => __( 'Single Product', 'unitone-woocommerce-integrator' ),
-				'content' => file_get_contents( UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/templates/single-product.html' ),
-			),
-			array(
-				'slug'       => 'unitone//template-single-product-one-column',
+				'slug'       => $stylesheet . '//template-single-product-one-column',
 				'title'      => __( 'Single Products: One Column', 'unitone-woocommerce-integrator' ),
-				'content'    => file_get_contents( UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/templates/template-single-product-one-column.html' ),
+				'content'    => unitone_template_get_content( UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/templates/template-single-product-one-column.html' ),
 				'post_types' => array( 'product' ),
 			),
 			array(
-				'slug'       => 'unitone//template-single-product-one-column-page-header-image',
+				'slug'       => $stylesheet . '//template-single-product-one-column-page-header-image',
 				'title'      => __( 'Single Products: One Column / Page Header (Image)', 'unitone-woocommerce-integrator' ),
-				'content'    => file_get_contents( UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/templates/template-single-product-one-column-page-header-image.html' ),
+				'content'    => unitone_template_get_content( UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/templates/template-single-product-one-column-page-header-image.html' ),
 				'post_types' => array( 'product' ),
 			),
 			array(
-				'slug'       => 'unitone//template-single-product-right-sidebar',
+				'slug'       => $stylesheet . '//template-single-product-right-sidebar',
 				'title'      => __( 'Single Products: Right Sidebar', 'unitone-woocommerce-integrator' ),
-				'content'    => file_get_contents( UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/templates/template-single-product-right-sidebar.html' ),
+				'content'    => unitone_template_get_content( UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/templates/template-single-product-right-sidebar.html' ),
 				'post_types' => array( 'product' ),
 			),
 			array(
-				'slug'       => 'unitone//template-single-product-right-sidebar-page-header-image',
+				'slug'       => $stylesheet . '//template-single-product-right-sidebar-page-header-image',
 				'title'      => __( 'Single Products: Right Sidebar / Page Header (Image)', 'unitone-woocommerce-integrator' ),
-				'content'    => file_get_contents( UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/templates/template-single-product-right-sidebar-page-header-image.html' ),
+				'content'    => unitone_template_get_content( UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/templates/template-single-product-right-sidebar-page-header-image.html' ),
 				'post_types' => array( 'product' ),
 			),
 			array(
-				'slug'       => 'unitone//template-single-product-left-header',
+				'slug'       => $stylesheet . '//template-single-product-left-header',
 				'title'      => __( 'Single Products: Left Header', 'unitone-woocommerce-integrator' ),
-				'content'    => file_get_contents( UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/templates/template-single-product-left-header.html' ),
+				'content'    => unitone_template_get_content( UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/templates/template-single-product-left-header.html' ),
 				'post_types' => array( 'product' ),
 			),
 			array(
-				'slug'       => 'unitone//template-single-product-left-header-page-header-image',
+				'slug'       => $stylesheet . '//template-single-product-left-header-page-header-image',
 				'title'      => __( 'Single Products: Left Header / Page Header (Image)', 'unitone-woocommerce-integrator' ),
-				'content'    => file_get_contents( UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/templates/template-single-product-left-header-page-header-image.html' ),
+				'content'    => unitone_template_get_content( UNITONE_WOOCOMMERCE_INTEGRATOR_PATH . '/templates/template-single-product-left-header-page-header-image.html' ),
 				'post_types' => array( 'product' ),
 			),
 		);
 
+		// Register unique templates.
 		foreach ( $block_templates as $block_template ) {
 			$slug = $block_template['slug'];
 			unset( $block_template['slug'] );
@@ -467,47 +487,50 @@ add_action(
 			);
 		}
 
+		// Override WooCommerce templates.
 		add_filter(
-			'wp_theme_json_data_theme',
-			function ( $theme_json ) use ( $block_templates ) {
-				$custom_templates = array_map(
-					function ( $block_template ) {
-						if ( empty( $block_template['post_types'] ) ) {
-							return false;
+			'get_block_templates',
+			function ( $templates, $query, $template_type ) use ( $woocommerce_block_templates, $block_templates ) {
+				if ( 'wp_template' !== $template_type ) {
+					return $templates;
+				}
+
+				foreach ( $templates as $index => $template ) {
+					$found_woocommerce_template = array_find(
+						$woocommerce_block_templates,
+						function ( $t ) use ( $template ) {
+							return $template->id === $t['id'];
 						}
+					);
 
-						return array(
-							'name'      => str_replace( 'unitone//', '', $block_template['slug'] ),
-							'title'     => $block_template['title'],
-							'postTypes' => $block_template['post_types'],
-						);
-					},
-					$block_templates
-				);
+					if ( $found_woocommerce_template ) {
+						$templates[ $index ]->plugin = 'unitone-woocommerce-integrator';
 
-				$custom_templates = array_filter(
-					$custom_templates,
-					function ( $custom_template ) {
-						return is_array( $custom_template );
+						$_block_template = get_block_template( $template->id, 'wp_template' );
+						if ( 'custom' === $_block_template->source ) {
+							$templates[ $index ] = $_block_template;
+						} else {
+							$templates[ $index ]->content = $found_woocommerce_template['content'];
+						}
 					}
-				);
 
-				$raw_data = $theme_json->get_data();
+					$found_template = array_find(
+						$block_templates,
+						function ( $t ) use ( $template ) {
+							return $template->id === $t['slug'];
+						}
+					);
 
-				$new_data = array(
-					'version'         => $raw_data['version'],
-					'customTemplates' => array_merge(
-						$raw_data['customTemplates'],
-						$custom_templates
-					),
-				);
-
-				return $theme_json->update_with( $new_data );
+					if ( $found_template ) {
+						$templates[ $index ]->plugin = 'unitone-woocommerce-integrator';
+					}
+				}
+				return $templates;
 			},
-			9
+			10,
+			3
 		);
-	},
-	9
+	}
 );
 
 /**
