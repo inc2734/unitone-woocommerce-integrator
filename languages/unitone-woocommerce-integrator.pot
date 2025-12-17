@@ -2,14 +2,14 @@
 # This file is distributed under the GPL2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: unitone WooCommerce integrator 0.2.5\n"
+"Project-Id-Version: unitone WooCommerce integrator 0.2.6\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/unitone-woocommerce-integrator\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-10-16T23:53:58+00:00\n"
+"POT-Creation-Date: 2025-12-17T10:55:29+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: unitone-woocommerce-integrator\n"
@@ -155,96 +155,138 @@ msgid "Product Catalog: Left Header"
 msgstr ""
 
 #: inc/templates.php:196
-msgid "Product Catalog: One Column / Page Header (Image)"
+msgid "Product Catalog: Left Header (Thin) / Page Header (Image)"
 msgstr ""
 
 #: inc/templates.php:204
-msgid "Product Catalog: One Column"
+msgid "Product Catalog: Left Header (Thin)"
 msgstr ""
 
 #: inc/templates.php:212
-msgid "Product Catalog: Right Sidebar / Page Header (Image)"
+msgid "Product Catalog: One Column / Page Header (Image)"
 msgstr ""
 
 #: inc/templates.php:220
-msgid "Product Catalog: Right Sidebar"
+msgid "Product Catalog: One Column"
 msgstr ""
 
 #: inc/templates.php:228
-msgid "Cart: Left Header / Page Header (Image)"
+msgid "Product Catalog: Right Sidebar / Page Header (Image)"
 msgstr ""
 
 #: inc/templates.php:236
-msgid "Cart: Left Header"
+msgid "Product Catalog: Right Sidebar"
 msgstr ""
 
 #: inc/templates.php:244
-msgid "Cart: One Column / Page Header (Image)"
+msgid "Cart: Left Header / Page Header (Image)"
 msgstr ""
 
 #: inc/templates.php:252
-msgid "Cart: One Column"
+msgid "Cart: Left Header"
 msgstr ""
 
 #: inc/templates.php:260
-msgid "Checkout: Left Header / Page Header (Image)"
+msgid "Cart: Left Header (Thin) / Page Header (Image)"
 msgstr ""
 
 #: inc/templates.php:268
-msgid "Checkout: Left Header"
+msgid "Cart: Left Header (Thin)"
 msgstr ""
 
 #: inc/templates.php:276
-msgid "Checkout: One Column / Page Header (Image)"
+msgid "Cart: One Column / Page Header (Image)"
 msgstr ""
 
 #: inc/templates.php:284
-msgid "Checkout: One Column"
+msgid "Cart: One Column"
 msgstr ""
 
 #: inc/templates.php:292
-msgid "Order Confirmation: Left Header / Page Header (Image)"
+msgid "Checkout: Left Header / Page Header (Image)"
 msgstr ""
 
 #: inc/templates.php:300
-msgid "Order Confirmation: Left Header"
+msgid "Checkout: Left Header"
 msgstr ""
 
 #: inc/templates.php:308
-msgid "Order Confirmation: One Column / Page Header (Image)"
+msgid "Checkout: Left Header (Thin) / Page Header (Image)"
 msgstr ""
 
 #: inc/templates.php:316
-msgid "Order Confirmation: One Column"
+msgid "Checkout: Left Header (Thin)"
 msgstr ""
 
 #: inc/templates.php:324
-#: inc/templates.php:473
-msgid "Single Products: Left Header / Page Header (Image)"
+msgid "Checkout: One Column / Page Header (Image)"
 msgstr ""
 
 #: inc/templates.php:332
-#: inc/templates.php:467
-msgid "Single Products: Left Header"
+msgid "Checkout: One Column"
 msgstr ""
 
 #: inc/templates.php:340
-#: inc/templates.php:449
-msgid "Single Products: One Column / Page Header (Image)"
+msgid "Order Confirmation: Left Header / Page Header (Image)"
 msgstr ""
 
 #: inc/templates.php:348
-#: inc/templates.php:443
-msgid "Single Products: One Column"
+msgid "Order Confirmation: Left Header"
 msgstr ""
 
 #: inc/templates.php:356
-#: inc/templates.php:461
-msgid "Single Products: Right Sidebar / Page Header (Image)"
+msgid "Order Confirmation: Left Header (Thin) / Page Header (Image)"
 msgstr ""
 
 #: inc/templates.php:364
-#: inc/templates.php:455
+msgid "Order Confirmation: Left Header (Thin)"
+msgstr ""
+
+#: inc/templates.php:372
+msgid "Order Confirmation: One Column / Page Header (Image)"
+msgstr ""
+
+#: inc/templates.php:380
+msgid "Order Confirmation: One Column"
+msgstr ""
+
+#: inc/templates.php:388
+#: inc/templates.php:553
+msgid "Single Products: Left Header / Page Header (Image)"
+msgstr ""
+
+#: inc/templates.php:396
+#: inc/templates.php:547
+msgid "Single Products: Left Header"
+msgstr ""
+
+#: inc/templates.php:404
+#: inc/templates.php:565
+msgid "Single Products: Left Header (Thin) / Page Header (Image)"
+msgstr ""
+
+#: inc/templates.php:412
+#: inc/templates.php:559
+msgid "Single Products: Left Header (Thin)"
+msgstr ""
+
+#: inc/templates.php:420
+#: inc/templates.php:529
+msgid "Single Products: One Column / Page Header (Image)"
+msgstr ""
+
+#: inc/templates.php:428
+#: inc/templates.php:523
+msgid "Single Products: One Column"
+msgstr ""
+
+#: inc/templates.php:436
+#: inc/templates.php:541
+msgid "Single Products: Right Sidebar / Page Header (Image)"
+msgstr ""
+
+#: inc/templates.php:444
+#: inc/templates.php:535
 msgid "Single Products: Right Sidebar"
 msgstr ""
 

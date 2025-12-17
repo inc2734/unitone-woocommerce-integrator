@@ -5,8 +5,8 @@ msgstr ""
 "Project-Id-Version: unitone WooCommerce integrator 0.0.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/unitone-"
 "woocommerce-integrator\n"
-"POT-Creation-Date: 2025-10-16T23:53:58+00:00\n"
-"PO-Revision-Date: 2025-10-17 08:55+0900\n"
+"POT-Creation-Date: 2025-12-17T10:55:29+00:00\n"
+"PO-Revision-Date: 2025-12-17 19:58+0900\n"
 "Last-Translator: inc2734 <inc@2inc.org>\n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.7\n"
+"X-Generator: Poedit 3.8\n"
 "X-Domain: unitone-woocommerce-integrator\n"
 
 #. Plugin Name of the plugin
@@ -167,90 +167,130 @@ msgid "Product Catalog: Left Header"
 msgstr "商品カタログ：左ヘッダー"
 
 #: inc/templates.php:196
+msgid "Product Catalog: Left Header (Thin) / Page Header (Image)"
+msgstr "商品カタログ：左ヘッダー（細） / ページヘッダー（画像）"
+
+#: inc/templates.php:204
+msgid "Product Catalog: Left Header (Thin)"
+msgstr "商品カタログ：左ヘッダー（細）"
+
+#: inc/templates.php:212
 msgid "Product Catalog: One Column / Page Header (Image)"
 msgstr "商品カタログ：1カラム / ページヘッダー（画像）"
 
-#: inc/templates.php:204
+#: inc/templates.php:220
 msgid "Product Catalog: One Column"
 msgstr "商品カタログ：1カラム"
 
-#: inc/templates.php:212
+#: inc/templates.php:228
 msgid "Product Catalog: Right Sidebar / Page Header (Image)"
 msgstr "商品カタログ：右サイドバー / ページヘッダー（画像）"
 
-#: inc/templates.php:220
+#: inc/templates.php:236
 msgid "Product Catalog: Right Sidebar"
 msgstr "商品カタログ：右サイドバー"
 
-#: inc/templates.php:228
+#: inc/templates.php:244
 msgid "Cart: Left Header / Page Header (Image)"
 msgstr "お買い物カゴ：左ヘッダー / ページヘッダー（画像）"
 
-#: inc/templates.php:236
+#: inc/templates.php:252
 msgid "Cart: Left Header"
 msgstr "お買い物カゴ：左ヘッダー"
 
-#: inc/templates.php:244
+#: inc/templates.php:260
+msgid "Cart: Left Header (Thin) / Page Header (Image)"
+msgstr "お買い物カゴ：左ヘッダー（細） / ページヘッダー（画像）"
+
+#: inc/templates.php:268
+msgid "Cart: Left Header (Thin)"
+msgstr "お買い物カゴ：左ヘッダー（細）"
+
+#: inc/templates.php:276
 msgid "Cart: One Column / Page Header (Image)"
 msgstr "お買い物カゴ：1カラム / ページヘッダー（画像）"
 
-#: inc/templates.php:252
+#: inc/templates.php:284
 msgid "Cart: One Column"
 msgstr "お買い物カゴ：1カラム"
 
-#: inc/templates.php:260
+#: inc/templates.php:292
 msgid "Checkout: Left Header / Page Header (Image)"
 msgstr "購入手続き：左ヘッダー / ページヘッダー（画像）"
 
-#: inc/templates.php:268
+#: inc/templates.php:300
 msgid "Checkout: Left Header"
 msgstr "購入手続き：左ヘッダー"
 
-#: inc/templates.php:276
+#: inc/templates.php:308
+msgid "Checkout: Left Header (Thin) / Page Header (Image)"
+msgstr "購入手続き：左ヘッダー（細） / ページヘッダー（画像）"
+
+#: inc/templates.php:316
+msgid "Checkout: Left Header (Thin)"
+msgstr "購入手続き：左ヘッダー（細）"
+
+#: inc/templates.php:324
 msgid "Checkout: One Column / Page Header (Image)"
 msgstr "購入手続き：1カラム / ページヘッダー（画像）"
 
-#: inc/templates.php:284
+#: inc/templates.php:332
 msgid "Checkout: One Column"
 msgstr "購入手続き：1カラム"
 
-#: inc/templates.php:292
+#: inc/templates.php:340
 msgid "Order Confirmation: Left Header / Page Header (Image)"
 msgstr "注文確認：左ヘッダー / ページヘッダー（画像）"
 
-#: inc/templates.php:300
+#: inc/templates.php:348
 msgid "Order Confirmation: Left Header"
 msgstr "注文確認：左ヘッダー"
 
-#: inc/templates.php:308
+#: inc/templates.php:356
+msgid "Order Confirmation: Left Header (Thin) / Page Header (Image)"
+msgstr "注文確認：左ヘッダー（細） / ページヘッダー（画像）"
+
+#: inc/templates.php:364
+msgid "Order Confirmation: Left Header (Thin)"
+msgstr "注文確認：左ヘッダー（細）"
+
+#: inc/templates.php:372
 msgid "Order Confirmation: One Column / Page Header (Image)"
 msgstr "注文確認：1カラム / ページヘッダー（画像）"
 
-#: inc/templates.php:316
+#: inc/templates.php:380
 msgid "Order Confirmation: One Column"
 msgstr "注文確認：1カラム"
 
-#: inc/templates.php:324 inc/templates.php:473
+#: inc/templates.php:388 inc/templates.php:553
 msgid "Single Products: Left Header / Page Header (Image)"
 msgstr "単一の商品：左ヘッダー / ページヘッダー（画像）"
 
-#: inc/templates.php:332 inc/templates.php:467
+#: inc/templates.php:396 inc/templates.php:547
 msgid "Single Products: Left Header"
 msgstr "単一の商品：左ヘッダー"
 
-#: inc/templates.php:340 inc/templates.php:449
+#: inc/templates.php:404 inc/templates.php:565
+msgid "Single Products: Left Header (Thin) / Page Header (Image)"
+msgstr "単一の商品：左ヘッダー（細） / ページヘッダー（画像）"
+
+#: inc/templates.php:412 inc/templates.php:559
+msgid "Single Products: Left Header (Thin)"
+msgstr "単一の商品：左ヘッダー（細）"
+
+#: inc/templates.php:420 inc/templates.php:529
 msgid "Single Products: One Column / Page Header (Image)"
 msgstr "単一の商品：1カラム / ページヘッダー（画像）"
 
-#: inc/templates.php:348 inc/templates.php:443
+#: inc/templates.php:428 inc/templates.php:523
 msgid "Single Products: One Column"
 msgstr "単一の商品：1カラム"
 
-#: inc/templates.php:356 inc/templates.php:461
+#: inc/templates.php:436 inc/templates.php:541
 msgid "Single Products: Right Sidebar / Page Header (Image)"
 msgstr "単一の商品：右サイドバー / ページヘッダー（画像）"
 
-#: inc/templates.php:364 inc/templates.php:455
+#: inc/templates.php:444 inc/templates.php:535
 msgid "Single Products: Right Sidebar"
 msgstr "単一の商品：右サイドバー"
 
