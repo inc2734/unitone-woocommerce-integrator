@@ -1,13 +1,7 @@
-@use '../../../../node_modules/@inc2734/unitone-css/src/variables/variables' as variables;
-
 .wc-block-cart-items {
 	border-collapse: collapse;
 }
 
 table.wc-block-cart-items .wc-block-cart-items__header .wc-block-cart-items__header-total {
 	width: auto;
-}
-
-.is-large.wc-block-cart .wc-block-cart__totals-title {
-	@include variables.typography();
 }
